@@ -1,0 +1,161 @@
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: consolas;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    font-family: "Tektur", sans-serif;
+    font-style: bold;
+    font-size: 40px;
+    color: white;
+}
+
+main {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+body {
+    background: #081a24;
+    background: linear-gradient(90deg,rgba(8, 26, 36, 1) 0%, rgba(23, 19, 82, 1) 39%, rgba(93, 83, 237, 1) 100%);
+}
+
+.image-container {
+    display: flex;
+}
+
+.image-container img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    padding: 10px;
+    box-shadow: 0px 0px 2px black;
+    width: 90%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+h2 {
+    padding: 10px;
+    align-self: center;
+    font-family: "Tektur", sans-serif;
+    font-style: bold;
+}
+
+span {
+    padding: 5px;
+    align-self: center;
+    font-family: "Poppins";
+}
+
+p {
+    padding: 5px;
+    font-family: "Poppins";
+}
+
+strong {
+    padding: 10px;
+    align-self: center;
+    font-family: "Tektur", sans-serif;
+    font-style: bold;
+}
+
+/* BARRA */
+
+nav {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav img{
+    width: 150px;
+
+}
+.barra {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 70px;
+}
+
+.barra input {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    border: none;
+    font-size: 1.1em;
+    padding: 0.5em 20px;
+    border-color: white;
+    background: linear-gradient(#ffffff, #dddada);
+    color: black;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.05),
+        15px 15px 15px rgba(0,0,0,0.1),
+        20px 20px 15px rgba(0,0,0,0.1),
+        30px 30px 15px rgba(0,0,0,0.1),
+        inset 1px 1px px #fff;
+}
+
+
+ion-icon {
+    position: absolute;
+    right: 20px;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .barra {
+    width: 100%;
+    max-width: 90%;
+    height: 50px;
+  }
+
+  nav img {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+}
