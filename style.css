@@ -112,6 +112,7 @@ nav img{
     height: 60%;
     border: none;
     font-size: 1.1em;
+    border-radius: 20px;
     padding: 0.5em 20px;
     border-color: white;
     background: linear-gradient(#ffffff, #dddada);
